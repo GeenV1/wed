@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  background: black;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background: gray;
+  position: relative;
+  overflow: hidden;
+}
+.light-box {
+  position: absolute;
+  height: 100%;
+  opacity: 1;
+  z-index: 0;
+}
+.light-strip {
+  position: absolute;
+  height: 80%;
+  background: rgb(255, 227, 66);
+  opacity: 1;
+  width: 9%;
+  z-index: 0;
+  box-shadow: 0 0 60px rgba(255, 227, 66, 0.7);
+  filter: brightness(1.5);
+}
+
+/* Animation for collapsing black bar */
+@keyframes collapseBar {
+  0% { height: 10%; }
+  100% { height: 0%; }
+}
+
+/* Flicker animation for light */
+@keyframes flicker {
+  0%, 100% { opacity: 1; filter: brightness(1.5); }
+  50% { opacity: 0.5; filter: brightness(3); }
+}
+
+.animate-collapse {
+  animation: collapseBar 0.5s forwards;
+}
+
+.animate-flicker {
+  animation: flicker 0.2s infinite;
+}
+
+
+.boxmini-strip {
+  position: absolute;
+  background-color: black;
+  height: 3%;
+  top: 15%;
+  width: 10%;
+  z-index: 1;
+}
+.boxstick-strip {
+  position: absolute;
+  background-color: black;
+  height: 8%;
+  top: 10%;
+  width: 10%;
+  z-index: 1;
+}
+.box-strip {
+  position: absolute;
+  background-color: black;
+  height: 10%;
+  opacity: 1;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Adjust left-right position of each strip */
+
+.left {
+  left: 12%;
+  width: 15%;
+  top: 15%;
+}
+.mid-left {
+  left: 42%;
+  width: 8%;
+  top: 15%;
+}
+.mid-right {
+  left: 80%;
+  width: 25%;
+  top: 15%;
+}
+.top {
+  height: 10%;
+}
+.down {
+  height: 10%;
+  top: 100%;
+  top: 90%;
+}
+.one {
+  left: 12%;
+  width: 15%
+}
+.two {
+  left: 42%;
+  width: 8%;
+}
+.three {
+  left: 80%;
+  width: 25%;
+}
+.oneS {
+  left: 18.5%;
+  width: 2%
+}
+.twoS {
+  left: 45%;
+  width: 2%;
+}
+.threeS {
+  left: 90%;
+  width: 2%;
+}
+
+
+.text {
+  position: absolute;
+  bottom: 20%;
+  right: 40%;
+  color: black;
+  text-align: center;
+}
+
+.text h1 {
+  font-size: 50px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.text p {
+  font-size: 32px;
+  margin: 0 0 0 0;
+}

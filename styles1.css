@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  background: gray;
+  font-family: sans-serif;
+}
+.box-strip {
+    position: absolute;
+  background-color: black;
+  z-index: 1;
+}
+.light-strip {
+position: absolute;
+  background: rgb(255, 227, 66);
+  opacity: 1;
+  z-index: 0;
+    box-shadow: 0 0 60px rgba(255, 227, 66, 0.7);
+  filter: brightness(1.5);
+}
+.La {
+    width: 88%;
+    height: 30%;
+    bottom: 50%;
+    left: 12%;
+}
+.a {
+ width: 40%;
+ height: 7%;
+ top: 60%;
+}
+.b {
+    width: 10%;
+    height: 40%;
+    bottom: 0%;
+    left: 10%;
+}
+.c {
+    width: 4%;
+    height: 20%;
+    bottom: 40%;
+    left: 4%;
+}
+.d {
+    width: 4%;
+    height: 30%;
+    bottom: 50%;
+    left: 9%;
+}
+.e {
+    width: 4%;
+    height: 4%;
+    bottom: 56%;
+    left: 7%;
+}
+.f {
+ width: 30%;
+ height: 20%;
+ bottom: 0%;
+ left: 40%;
+}
+.text {
+    position: absolute;
+    width: 88%;
+    height: 30%;
+    bottom: 40%;
+    left: 20%;
+    font-size: 250%;
+}
+#profile {
+    color: black;
+}
